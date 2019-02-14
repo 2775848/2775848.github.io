@@ -3,10 +3,17 @@
 ментарий
  */
 
+@font-face  {
+              font-family: "Emblema One"
+              src: url("https://2775848.github.io/journal/EmblemaOne-Regular.woff");
+}
 body {
         font-family: "Monotype Corsiva", Verdana, Geneva, Arial, sans-serif;
 }
+h1 {
+      font-family: "Emblema One";
 
+}
 
 
 
