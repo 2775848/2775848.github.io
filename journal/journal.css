@@ -6,25 +6,53 @@
 @font-face  {
               font-family: "OpenSans-Regular";
               src: url("https://2775848.github.io/fonts/OpenSans-Regular.ttf");
+}
+@font-face  {
               font-family: "OpenSans-Italic";
               src: url("https://2775848.github.io/fonts/OpenSans-Italic.ttf");
+}
+@font-face  {
               font-family: "OpenSans-SemiBoldItalic";
               src: url("https://2775848.github.io/fonts/OpenSans-SemiBoldItalic.ttf");
+}
+@font-face  {
               font-family: "OpenSans-Light";
               src: url("https://2775848.github.io/fonts/OpenSans-Light.ttf");
+}
+@font-face  {
               font-family: "OpenSans-Bold";
               src: url("https://2775848.github.io/fonts/OpenSans-Bold.ttf");
+}
+@font-face  {
               font-family: "OpenSans-SemiBold";
               src: url("https://2775848.github.io/fonts/OpenSans-SemiBold.ttf");
+}
+@font-face  {
               font-family: "Pacifico";
               src: url("https://2775848.github.io/fonts/Pacifico-Regular.ttf");
 }
+@font-face  {
+              font-family: "Montserrat-Regular";
+              src: url("https://2775848.github.io/fonts/Montserrat-Regular.ttf");
+}
+@font-face  {
+              font-family: "Montserrat-Italic";
+              src: url("https://2775848.github.io/fonts/Montserrat-Italic.ttf");
+}
+@font-face  {
+              font-family: "SeymourOne-Regular";
+              src: url("https://2775848.github.io/fonts/SeymourOne-Regular.ttf");
+}
 body {
-        font-family: OpenSans-Italic, Verdana, Geneva, Arial, sans-serif;
+        font-family: OpenSans-Regular, sans-serif;
 }
 h1 {
-      font-family: Pacifico, "Emblema One";
+      font-family: SeymourOne-Regular, sans-serif;
       color: green;
+      text-transform: uppercase;
+}
+h2 {
+        font-family: OpenSans-Italic, cursive;
 }
 
 
