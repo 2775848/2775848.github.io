@@ -7,13 +7,18 @@
               font-family: "Emblema One";
               src: url("https://2775848.github.io/journal/EmblemaOne-Regular.woff");
               src: url("https://2775848.github.io/journal/EmblemaOne-Regular.ttf");
+
+}
+@font-face  {
+              font-family: "Pacifico";
+              src: url("https://2775848.github.io/journal/Pacifico-Regular.ttf");
 }
 body {
         font-family: Verdana, Geneva, Arial, sans-serif;
 }
 h1 {
-      font-family: "Emblema One";
-
+      font-family: Pacifico, "Emblema One";
+      color: green;
 }
 
 
