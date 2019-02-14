@@ -4,15 +4,23 @@
  */
 
 @font-face  {
-              font-family: "Emblema One";
-              src: url("https://2775848.github.io/journal/EmblemaOne-Regular.woff");
-              src: url("https://2775848.github.io/journal/EmblemaOne-Regular.ttf");
+              font-family: "OpenSans-Regular";
+              src: url("https://2775848.github.io/fonts/OpenSans-Regular.ttf");
+              font-family: "OpenSans-Italic";
+              src: url("https://2775848.github.io/fonts/OpenSans-Italic.ttf");
+              font-family: "OpenSans-SemiBoldItalic";
+              src: url("https://2775848.github.io/fonts/OpenSans-SemiBoldItalic.ttf");
+              font-family: "OpenSans-Light";
+              src: url("https://2775848.github.io/fonts/OpenSans-Light.ttf");
+              font-family: "OpenSans-Bold";
+              src: url("https://2775848.github.io/fonts/OpenSans-Bold.ttf");
+              font-family: "OpenSans-SemiBold";
+              src: url("https://2775848.github.io/fonts/OpenSans-SemiBold.ttf");
               font-family: "Pacifico";
-              src: url("https://2775848.github.io/journal/Pacifico-Regular.ttf");
-
+              src: url("https://2775848.github.io/fonts/Pacifico-Regular.ttf");
 }
 body {
-        font-family: Verdana, Geneva, Arial, sans-serif;
+        font-family: OpenSans-Italic, Verdana, Geneva, Arial, sans-serif;
 }
 h1 {
       font-family: Pacifico, "Emblema One";
