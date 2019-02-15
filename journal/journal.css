@@ -45,17 +45,28 @@
 }
 body {
         font-family: OpenSans-Regular, sans-serif;
+        font-size: medium;
 }
 h1 {
       font-family: SeymourOne-Regular, sans-serif;
       color: green;
+      font-size: 200%;
       text-transform: uppercase;
 }
 h2 {
         font-family: OpenSans-Italic, cursive;
+        font-size: 150%;
 }
-
-
+dt  {
+      font-family: OpenSans-SemiBoldItalic, sans-serif;
+      font-size: 80%;
+      color: grey;
+}
+dd  {
+      font-family: OpenSans-Italic, cursive;
+      font-size: 80%;
+      color: grey;
+}
 
 
 
