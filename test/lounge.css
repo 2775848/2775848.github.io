@@ -2,12 +2,18 @@
 меняется, потому что это ком-
 ментарий
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic');
+/*  @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic');
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic');
 
 body {
   font-family: Roboto, Verdana, Helvetica, Arial, sans-serif;
   font-size: small;
   line-height: 1.6em;
+/*  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+*/
 }
 h1, h2 {
   color: #007e7e;
@@ -17,4 +23,23 @@ h1 {
 }
 h2  {
   font-size: 130%;
+}
+#guarantee  {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #444444;
+  line-height: 1.9em;
+  margin: 30px;
+  margin-right: 250px;
+  padding: 25px;
+  padding-left: 80px;
+  border-color: white;
+  border-width: thin;
+  border-style: dashed;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;   
+  background-color: #a7cece;
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left; 
 }
