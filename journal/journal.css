@@ -49,21 +49,30 @@ body {
 }
 h1 {
       font-family: SeymourOne-Regular, sans-serif;
-      color: green;
+      color: #336600; /* темно-зеленый */
       font-size: 200%;
       text-transform: uppercase;
 }
 h2 {
-        font-family: OpenSans-Italic, cursive;
-        font-size: 150%;
+      font-family: OpenSans-Italic, cursive;
+      font-size: 130%;
+      color: #cc6600; /* темно-оранж */
+      border-bottom: thin dotted #cc6600;
+      font-weight: bold;
+      font-style: italic;
 }
+blockquote {
+              font-family: OpenSans-Italic, cursive;
+}
+
 dt  {
-      font-family: OpenSans-SemiBoldItalic, sans-serif;
+      font-style: italic;
       font-size: 80%;
       color: grey;
+      font-weight: bold;
 }
 dd  {
-      font-family: OpenSans-Italic, cursive;
+      font-style: italic;
       font-size: 80%;
       color: grey;
 }
