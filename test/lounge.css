@@ -23,6 +23,7 @@ h1, h2 {
 h1 {
   font-size: 200%;            
   font-family: Pattaya, sans-serif;
+  line-height: 1.2em;
 }
 h2  {
   font-size: 140%;
@@ -44,6 +45,7 @@ h2  {
   text-align: center;
   width: 210px;
   margin-left: 20px;
+  margin-bottom: 10px;
   padding: 0px 20px 20px 20px;
   border: solid thin #007e7e;
   background: url(images/cocktail.gif) repeat-x;
@@ -56,7 +58,7 @@ h2  {
   color: #d12c47;
 }
 #footer {
-  
+  clear: right;
   border-top: solid black thin;
   font-size: 80%;
   text-align: center;
