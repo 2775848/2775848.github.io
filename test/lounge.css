@@ -4,12 +4,11 @@
  */
 /*  @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic');
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Pattaya|Roboto:400,400i,700&subset=cyrillic');
 
 body {
-  font-family: Roboto, Verdana, Helvetica, Arial, sans-serif;
-  font-size: small;
-  line-height: 1.6em;
+  font: small/1.6em Roboto, Verdana, Helvetica, Arial, sans-serif;
+
 /*  margin-left: 20%;
   margin-right: 20%;
   width: 60%;
@@ -19,27 +18,58 @@ h1, h2 {
   color: #007e7e;
 }
 h1 {
-  font-size: 150%;             
+  font-size: 200%;            
+  font-family: Pattaya, sans-serif;
 }
 h2  {
-  font-size: 130%;
+  font-size: 140%;
 }
 #guarantee  {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   color: #444444;
   line-height: 1.9em;
-  margin: 30px;
-  margin-right: 250px;
-  padding: 25px;
-  padding-left: 80px;
-  border-color: white;
-  border-width: thin;
-  border-style: dashed;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;   
-  background-color: #a7cece;
-  background-image: url(images/background.gif);
-  background-repeat: no-repeat;
-  background-position: top left; 
+  margin: 30px 250px 30px 30px;
+  padding: 25px 25px 25px 80px;
+  border: white thin dashed;
+  border-radius: 0px 35px 0px 35px;
+  background: url(images/background.gif) #a7cece top left no-repeat;
+}
+#elixirs  {
+  line-height: 1;
+  text-align: center;
+  width: 210px;
+  margin-left: 20px;
+  padding: 0px 20px 20px 20px;
+  border: solid thin #007e7e;
+  background: url(images/cocktail.gif) repeat-x;
+}
+#elixirs h2  {
+  color: black;
+  line-height: 1.2;
+}
+#elixirs h3  {
+  color: #cc6e96;
+}
+#footer {
+  border-top: solid black thin;
+  font-size: 80%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+.cd {
+  font-style: italic; 
+}
+.artist {
+    font-weight: bold; 
+}
+a:link {
+color: green;
+}
+a:visited {
+color: red;
+}
+a:hover {
+color: yellow;
 }
