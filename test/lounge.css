@@ -14,6 +14,9 @@ body {
   width: 60%;
 */
 }
+a:link  {color: #007e7e;}
+a:visited {color: #333333;}
+
 h1, h2 {
   color: #007e7e;
 }
@@ -29,13 +32,14 @@ h2  {
   font-style: italic;
   color: #444444;
   line-height: 1.9em;
-  margin: 30px 250px 30px 30px;
+  margin: 30px 260px 30px 30px;
   padding: 25px 25px 25px 80px;
   border: white thin dashed;
   border-radius: 0px 35px 0px 35px;
   background: url(images/background.gif) #a7cece top left no-repeat;
 }
 #elixirs  {
+  float: right;
   line-height: 1;
   text-align: center;
   width: 210px;
@@ -49,19 +53,20 @@ h2  {
   line-height: 1.2;
 }
 #elixirs h3  {
-  color: #cc6e96;
+  color: #d12c47;
 }
 #footer {
+  
   border-top: solid black thin;
   font-size: 80%;
   text-align: center;
   line-height: normal;
   margin-top: 30px;
 }
-.cd {
+span.cd {
   font-style: italic; 
 }
-.artist {
+span.artist {
   font-weight: bold; 
 }
 #elixirs a:link {
