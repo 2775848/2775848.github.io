@@ -9,10 +9,10 @@
 body {
   font: small/1.6em Roboto, Verdana, Helvetica, Arial, sans-serif;
 
-/*  margin-left: 20%;
-  margin-right: 20%;
-  width: 60%;
-*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
 }
 a:link  {color: #007e7e;}
 a:visited {color: #333333;}

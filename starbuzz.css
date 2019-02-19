@@ -3,9 +3,11 @@ body {
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
   margin:           0px;
-  width:            900px;
+
+ /* width:            900px;
   margin-left:      auto;
   margin-right:     auto;
+*/
 }
 
 #header {
@@ -21,9 +23,17 @@ div#tableRow  {
   display:          table-row;
 }
 
+#drinks {
+  display:          table-cell;
+  vertical-align:   top;
+  background-color: #efe5d0;
+  width:            20%;
+  padding:          15px;
+}
 #main {
   display:          table-cell;
   vertical-align:   top;
+  width:            60%;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
@@ -34,6 +44,7 @@ div#tableRow  {
 #sidebar {
   display:          table-cell;
   vertical-align:   top;
+  width:            20%;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
