@@ -10,14 +10,14 @@ body {
 */
 }
 
-#header {
+header {
   background-color: #675c47;
   margin:           10px 10px 0px 10px;
   height:           108px;
 }
 #headerSlogan {
-  width:            266px;
   float:            right;
+
 }
 #award  {
   position:         absolute;
@@ -58,7 +58,7 @@ div#tableRow  {
 */
 }
 
-#sidebar {
+aside {
   display:          table-cell;
   vertical-align:   top;
   width:            20%;
@@ -69,7 +69,7 @@ div#tableRow  {
 */
 }
 
-#footer {
+footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
