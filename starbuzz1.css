@@ -23,25 +23,23 @@ header.top img#headerSlogan {
 section#drinks {
   float:            left;
   background-color: #efe5d0;
-  width:            210px;
+  width:            230px;
   padding:          15px;
   margin:           0 10px 10px 10px;
 }
 section#main, 
 section#blog {
-
-
+  width:            610px;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           10px 260px;
+  margin:           10px 280px;
 }
 
 aside {
   float:            right;
-  width:            210px;
+  width:            230px;
   background:       #efe5d0 url(images/background.gif) bottom right;
-  font-size:        105%;
   padding:          15px;
   margin:           0 10px 10px 10px;
 }
@@ -103,7 +101,7 @@ nav ul li.selected {
 }
 /*----------*/
 #wrap {
-
+  width:            1200px;
   margin:           30px auto 0px auto;
   background-color: #b5a789;
 }
