@@ -22,14 +22,14 @@ section#drinks {
   float:            left;
   background-color: #efe5d0;
   width:            230px;
-  height:           700px;
+  min-height:       700px;
   padding:          15px;
   margin:           0 10px 10px 10px;
 }
 section#main, 
 section#blog {
   width:            610px;
-  height:           700px;  
+  min-height:       700px;  
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
@@ -39,7 +39,7 @@ section#blog {
 aside {
   float:            right;
   width:            230px;
-  height:           700px;  
+  min-height:       700px;  
   background:       #efe5d0 url(images/background.gif) bottom right;
   padding:          15px;
   margin:           0 10px 10px 10px;
