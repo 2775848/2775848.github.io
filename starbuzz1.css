@@ -1,7 +1,5 @@
 body { 
   
-  background-color: #b5a789;
-  background-color: #F5F5F5;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
   margin:           0px;
@@ -12,7 +10,7 @@ body {
 }
 header.top {
   background-color: #675c47;
-  margin:           10px 10px 0px 10px;
+  margin:           0px 10px;
   height:           108px;
 }
 header.top img#headerSlogan {
@@ -24,12 +22,14 @@ section#drinks {
   float:            left;
   background-color: #efe5d0;
   width:            230px;
+  height:           700px;
   padding:          15px;
   margin:           0 10px 10px 10px;
 }
 section#main, 
 section#blog {
   width:            610px;
+  height:           700px;  
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
@@ -39,6 +39,7 @@ section#blog {
 aside {
   float:            right;
   width:            230px;
+  height:           700px;  
   background:       #efe5d0 url(images/background.gif) bottom right;
   padding:          15px;
   margin:           0 10px 10px 10px;
@@ -49,7 +50,7 @@ footer {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           10px 10px 0 10px;
   font-size:        90%;
 }
 
@@ -97,19 +98,21 @@ nav ul li a:visited {
   font-weight:      bold;
 }
 nav ul li.selected {
-  background-color: #c8b99c;
+  border-bottom:    thick solid #954b4b;
 }
 /*----------*/
 #wrap {
   width:            1200px;
   margin:           30px auto 0px auto;
   background-color: #b5a789;
+  padding:          10px 0;
+
 }
 #my_header  {
   position:         fixed;
   top:              0px;
   width:            100%;
-  height:           30px;
+  height:           40px;
   background-color: #675C47;
   box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.20); /* Тень */  
 
