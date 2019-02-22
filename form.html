@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+  	
+    <h1>Starbuzz Bean Machine</h1>
+    <h2>Заполните форму и нажмите «Заказать сейчас», чтобы отправить заказ</h2>
+    <form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+    	<div class="tablerow">
+	    	<p>Выберите кофе:</p>
+	    	<p> 
+	    		<select name="beans">
+	    		<option value="Смесь">Домашняя смесь</option>
+	    		<option value="Боливия">Боливия</option>
+	    		<option value="Гватемала">Гватемала</option>
+	    		<option value="Кения">Кения</option>
+	    		</select>
+	    	</p>
+		</div>
+		<div class="tablerow">
+	    	<p>Тип:</p>
+	    	<p>
+		    	<input type="radio" name="beantype" value="зерна" checked> Кофе в зернах <br>
+		    	<input type="radio" name="beantype" value="молотый"> Молотый 
+		    </p>
+	    </div>
+	    <div class="tablerow">
+		   	<p>Количество пакетиков:</p>
+		   	<p><input type="number" name="bags" min="1" max="10"></p>
+		</div>
+		<div class="tablerow">
+		   	<p>Доставить к указанной дате</p>
+		   	<p><input type="date" name="date"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Дополнительные услуги:</p>
+	    	<p>	    		
+		    	<input type="checkbox" name="extras[]" value="подарочная упаковка"> Подарочная упаковка <br>
+		    	<input type="checkbox" name="extras[]" value="каталог" checked> Доставка каталога вместе с заказом <br><br>
+	    	</p>
+	    </div>
+	    <div class="tablerow">	
+	    	<p><b>Доставить по адресу</b></p>
+	    	<p></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Имя:</p> 
+	    	<p><input type="text" name="name"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Адрес:</p>
+	    	<p><input type="text" name="address"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Город:</p>
+	    	<p><input type="text" name="city"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Страна:</p> 
+	    	<p><input type="text" name="state"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Индекс:</p>
+	    	<p><input type="text" name="zip"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Телефон:</p>
+	    	<p><input type="tel" name="phone"></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p>Комментарии клиентов:</p>
+	    	<p><textarea></textarea></p>
+	    </div>
+	    <div class="tablerow">
+	    	<p></p>
+	    	<p><input type="submit" value="Заказать сейчас"></p>
+    	</div>
+    </form>
+    
+  </body>
+</html>
+

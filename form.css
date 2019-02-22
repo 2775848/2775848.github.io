@@ -1,0 +1,39 @@
+body  {
+  background:       #efe5d0 url(images/background.gif);
+  font-size:        medium;
+  font-family:      sans-serif;
+}
+h1  {
+  font-size:        120%;
+  color:            #954b4b;
+  margin:           0 auto;
+  text-align:       center;
+}
+h2  {
+  font-size:        100%;
+  text-align:       center;
+}
+form  {
+  margin:           0 auto;
+  display:          table;
+  background-color: #e1ceb8;
+  padding:          10px;
+  border:           thin dotted #675c47;
+
+}
+.tablerow {
+  display:          table-row;
+  padding:          10px;   
+}
+.tablerow p {
+  display:          table-cell;
+  vertical-align:   top;
+  padding:          3px;
+}
+.tablerow p:first-child {
+  text-align:       right;
+}
+textarea  {
+  width:            400px;
+  height:           200px;
+}
