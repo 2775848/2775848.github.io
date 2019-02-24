@@ -29,18 +29,18 @@
 		    </p>
 	    </div>
 	    <div class="tablerow">
-		   	<p>Количество пакетиков:</p>
-		   	<p><input type="number" name="bags" min="1" max="10"></p>
+		   	<p><label for="bags">Количество пакетиков:</label></p>
+		   	<p><input type="number" id="bags" name="bags" min="1" max="10"></p>
 		</div>
 		<div class="tablerow">
 		   	<p>Доставить к указанной дате</p>
-		   	<p><input type="date" name="date"></p>
+		   	<p><input type="date" name="date"></p><br><br>
 	    </div>
 	    <div class="tablerow">
 	    	<p>Дополнительные услуги:</p>
 	    	<p>	    		
-		    	<input type="checkbox" name="extras[]" value="подарочная упаковка"> Подарочная упаковка <br>
-		    	<input type="checkbox" name="extras[]" value="каталог" checked> Доставка каталога вместе с заказом <br><br>
+		    	<input type="checkbox" id="gift_pack" name="extras[]" value="подарочная упаковка"> <label for="gift_pack"> Подарочная упаковка </label><br>
+		    	<input type="checkbox" id="catalog" name="extras[]" value="каталог" checked><label for="catalog"> Доставка каталога вместе с заказом </label><br>
 	    	</p>
 	    </div>
 	    <div class="tablerow">	
@@ -73,7 +73,7 @@
 	    </div>
 	    <div class="tablerow">
 	    	<p>Комментарии клиентов:</p>
-	    	<p><textarea></textarea></p>
+	    	<p><textarea required placeholder="Если нужно, укажите здесь дополнительную информацию к вашему заказу"></textarea></p>
 	    </div>
 	    <div class="tablerow">
 	    	<p></p>
