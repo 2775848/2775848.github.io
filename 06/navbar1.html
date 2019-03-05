@@ -55,7 +55,7 @@ font-weight: bold;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
     background-color: #E7E7E7;
     text-align: center;
-    border-bottom: 2px solid grey;   
+    border-bottom: 2px solid maroon;   
 }
 
 nav ul {
@@ -68,7 +68,8 @@ nav li  {
 display: block;
 cursor: pointer;
 background-color: #E7E7E7;
-position: relative;
+border-bottom: 2px solid maroon;
+
 }
 nav a,
 nav span {
@@ -78,31 +79,37 @@ font-size: 16px;
 padding: 25px 30px 25px 30px;
 text-transform: uppercase;
 text-decoration: none;
-border-bottom: 2px solid grey;
+
 }
 nav a:hover,
 nav span:hover {
-background-color: #B2F511;
+background-color: maroon;
+color: white;
 }
 .mainNav > li  {
 margin-right: -4px;
 display: inline-block;
+border-bottom: none;
 }
 .mainNav > li > a,
 .mainNav > li > span  {
-border-bottom: none;
 }
 .submenu  {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    min-width: 150px;
+    text-align: left;
+}
+.submenu li {
+    position: relative;
 }
 .sub2menu  {
     display: none;
     position: absolute;
-    top:0%;
+    width: 250px;
+    top: 0;
     left: 100%;
     z-index: -10;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
@@ -117,7 +124,7 @@ border-bottom: none;
 }
 
 .submenu li:first-of-type {
-border-top: 2px solid grey;
+border-top: 2px solid maroon;
 }
 </style>
 </head>
@@ -126,23 +133,23 @@ border-top: 2px solid grey;
   <nav>
     <ul class="mainNav">
     <li><a href="" class="homeLink">Главная</a></li>
-    <li class="featureLink"><span>TabMenu1</span>
+    <li class="featureLink"><span>Услуги</span>
         <ul class="submenu">
-                <li><a href="">submenu1</a></li>
-                <li><span>submenu2</span>
+                <li><a href="">submenu-------------1</a></li>
+                <li><span>submenu---2</span>
                     <ul class="sub2menu">
-                            <li><a href="">sub2menu1</a></li>
+                            <li><a href="">sub2menu------------1</a></li>
                             <li><a>sub2menu2</a></li>
-                            <li><a>sub2menu3</a></li>
+                            <li><a>sub2menu---3</a></li>
                             <li><a href="">sub2menu4</a></li>
                         </ul>
                 </li>
-                <li><a>submenu3</a></li>
-                <li><a href="/index1.html">submenu4</a></li>
+                <li><a>submenu---3</a></li>
+                <li><a href="/index1.html">submenu---4</a></li>
         </ul>	
     </li>
-    <li class="expertLink"><a href="">TabMenu2</a></li>
-    <li class="projectLink"><a href="">TabMenu3</a></li>
+    <li class="expertLink"><a href="">Галерея</a></li>
+    <li class="projectLink"><a href="">Контакты</a></li>
   </ul>
 </nav>
 </header>  
