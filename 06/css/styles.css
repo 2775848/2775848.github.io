@@ -110,9 +110,11 @@ h3:first-letter {
 	float: 				right;
 	max-width: 			30%;
 	padding: 			20px;
+	background-color: #fafafa;
 	border:				thin dashed grey;
 	border-radius: 		20px;
 	margin: 			10px;
+	1box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 ul.sidebar  {
 }
