@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CosmoFarmer</title>
+<style>
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+
+/* БАЗОВЫЙ */
+body {
+	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+	padding: 20px;
+}
+.home .homeLink,
+.feature .featureLink,
+.expert .expertLink,
+.quiz .quizLink,
+.project .projectLink,
+.horoscope .horoscopeLink {
+background-color: #B2F511;
+background-position: 3px 50%;
+font-weight: bold;
+}
+
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+position: relative;
+}
+nav li  {
+display: block;
+background-color: #E7E7E7;
+background-image: url(images/nav.png);
+background-repeat: no-repeat;
+background-position: 0 2px;
+position: relative;
+}
+nav a,
+nav span {
+display: block;
+color: #000;
+font-size: 11px;
+padding: 7px 15px 7px 30px;
+text-transform: uppercase;
+text-decoration: none;
+border-bottom: 1px solid grey;
+border-right: none;*/
+}
+nav li:hover {
+background-color: #B2F511;
+background-position: 3px 50%;
+}
+.mainNav > li  {
+margin-right: -4px;
+display: inline-block;
+}
+
+.submenu  {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+.sub2menu  {
+    display: none;
+    position: absolute;
+    top:0%;
+    left: 100%;
+}
+
+
+.mainNav > li:hover > .submenu,
+.submenu > li:hover > .sub2menu   {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+/*.mainNav li:last-of-type a  {
+border-right: 1px dashed #999;
+}*/
+</style>
+</head>
+<body class="home">
+  <nav>
+    <ul class="mainNav">
+    <li class="homeLink"><a href="">Главная</a></li>
+    <li class="featureLink"><span>Сенсации</span>
+        <ul class="submenu">
+                <li><a href="">submenu1</a></li>
+                <li><a>submenu2</a>
+                    <ul class="sub2menu">
+                            <li><a href="">sub2menu1</a></li>
+                            <li><a>sub2menu2</a></li>
+                            <li><a>sub2menu3</a></li>
+                            <li><a href="">sub2menu4</a></li>
+                        </ul>
+                </li>
+                <li><a>submenu3</a></li>
+                <li><a href="/index1.html">submenu4</a></li>
+        </ul>	
+    </li>
+    <li class="expertLink"><a href="">Экспертизы</a></li>
+  </ul>
+</nav>
+  
+</body>
+</html>
