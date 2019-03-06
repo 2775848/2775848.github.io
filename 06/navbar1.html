@@ -35,6 +35,13 @@ table {
 } 
 /* конец кода сброса стилей браузера */
 
+/* АНИМАЦИЯ */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+
 /* БАЗОВЫЙ */
 body {
 	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
@@ -42,20 +49,20 @@ body {
     width: 760px;
     margin: 0 auto;
 }
-.home .homeLink,
-.feature .featureLink,
-.expert .expertLink,
-.quiz .quizLink,
-.project .projectLink,
-.horoscope .horoscopeLink {
+
+.checked  {
 font-weight: bold;
+color: maroon;
 }
 
 .mainNav  {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
     background-color: #E7E7E7;
     text-align: center;
-    border-bottom: 2px solid maroon;   
+    border-top: 2px solid maroon;
+    border-bottom: 2px solid maroon;
+    animation-name: fadeIn;
+    animation-duration: 1s;   
 }
 
 nav ul {
@@ -76,15 +83,28 @@ nav span {
 display: block;
 color: #000;
 font-size: 16px;
-padding: 25px 30px 25px 30px;
+padding: 25px 40px 25px 25px;
 text-transform: uppercase;
 text-decoration: none;
-
+}
+.mainNav span  {
+    background-image: url(images/d1_arrow.svg);
+    background-repeat:  no-repeat;
+    background-position: 95% 50%;
+    background-size: 15px;
+}
+.submenu span  {
+    background-image: url(images/r1_arrow.svg);
+    background-repeat:  no-repeat;
+    background-position: 95% 50%;
+    background-size: 15px;
 }
 nav a:hover,
 nav span:hover {
 background-color: maroon;
 color: white;
+    animation-name: fadeIn;
+    animation-duration: .5s;
 }
 .mainNav > li  {
 margin-right: -4px;
@@ -121,6 +141,8 @@ border-bottom: none;
 .submenu > li:hover > .sub2menu   {
     display: block;
     cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 1s; 
 }
 
 .submenu li:first-of-type {
@@ -132,24 +154,24 @@ border-top: 2px solid maroon;
  <header>
   <nav>
     <ul class="mainNav">
-    <li><a href="" class="homeLink">Главная</a></li>
-    <li class="featureLink"><span>Услуги</span>
+    <li><a href="navbar1.html">Главная</a></li>
+    <li><span class="checked">Услуги</span>
         <ul class="submenu">
-                <li><a href="">submenu-------------1</a></li>
-                <li><span>submenu---2</span>
+                <li><a href="navbar1.html">submenu1</a></li>
+                <li><span class="checked">submenu---2</span>
                     <ul class="sub2menu">
-                            <li><a href="">sub2menu---1</a></li>
-                            <li><a>sub2menu---2</a></li>
-                            <li><a>sub2menu---3</a></li>
-                            <li><a href="">sub2menu---4</a></li>
+                            <li><a href="navbar1.html">sub2menu-1</a></li>
+                            <li><a href="navbar1.html">sub2menu-2</a></li>
+                            <li><a class="checked" href="navbar1.html">sub2menu-3</a></li>
+                            <li><a href="navbar1.html">sub2menu-4</a></li>
                         </ul>
                 </li>
-                <li><a>submenu---3</a></li>
-                <li><a href="/index1.html">submenu---4</a></li>
+                <li><a href="navbar1.html">submenu3</a></li>
+                <li><a href="navbar1.html">submenu4</a></li>
         </ul>	
     </li>
-    <li class="expertLink"><a href="">Галерея</a></li>
-    <li class="projectLink"><a href="">Контакты</a></li>
+    <li><a href="navbar1.html">Галерея</a></li>
+    <li><a href="navbar1.html">Контакты</a></li>
   </ul>
 </nav>
 </header>  
