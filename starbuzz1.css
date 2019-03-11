@@ -16,21 +16,29 @@ header.top {
 header.top img#headerSlogan {
   float:            right;
 }
+.wrap1  {
 
+    background:       url(images/border1.png) repeat-y top left,
+                      url(images/border1.png) repeat-y top right,
+                      url(images/background.gif) top left,
+                      #efe5d0;
+}
+.wrap1:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
 
 section#drinks {
   float:            left;
-  background-color: #efe5d0;
+  1background-color: #efe5d0;
   width:            230px;
-  min-height:       700px;
   padding:          15px;
   margin:           0 10px 10px 10px;
 }
 section#main, 
 section#blog {
   width:            610px;
-  min-height:       700px;  
-  background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
   margin:           10px 280px;
@@ -39,10 +47,9 @@ section#blog {
 aside {
   float:            right;
   width:            230px;
-  min-height:       700px;  
-  background:       #efe5d0 url(images/background.gif) bottom right;
   padding:          15px;
   margin:           0 10px 10px 10px;
+  overflow:         hidden;
 }
 footer {
   clear:            both;
