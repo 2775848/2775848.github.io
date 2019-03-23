@@ -59,11 +59,11 @@ header  {
 	width: 24%;
 	background-color: rgba(255,255,255,.65);
 	text-align: center;
-	padding: 15px 0;
 	border-radius: 5px;
 	margin: 1px 0;
 }
 .mainNav li a  {
+	padding: 15px 0;
 	display: block;
 	text-decoration: none;
 	color: rgba(0,0,0,.8);
@@ -77,14 +77,14 @@ header  {
 	right: 10px;
 	top: ;
 	display: inline-block;
-	border-top: solid 4px black; 
-	border-bottom: solid 4px black;
+	border-top: solid 2px black; 
+	border-bottom: solid 2px black;
 	width: 25px;
 	height: 20px;
 }
 .menu_icon div  {
-		border-bottom: solid 4px black;
-		height: 8px;
+		border-bottom: solid 2px black;
+		height: 9px;
 }
 .menu_label  {
 	position: relative;
