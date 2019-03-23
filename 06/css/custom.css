@@ -1,0 +1,131 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+* {box-sizing: border-box;}
+body {
+	font:16px Roboto, serif;
+	background-image: url(../images/bg_body.png);
+	background-repeat: repeat-x;
+}
+
+.wrap  {
+	max-width: 1200px;
+	min-width: 260px;
+	margin: 0 auto;
+	min-height: 500px;
+	background-color: #0981C0;
+}
+header  {
+	
+	background-image: url(../images/bg_banner.jpg);
+	background-repeat: repeat-x;
+	padding: 30px;
+	background-size: contain;
+}
+
+.mainNav  {
+		padding-left: 0;
+}
+.mainNav li  {
+	display: inline-block;
+	list-style: none;
+	width: 24%;
+	background-color: rgba(255,255,255,.65);
+	text-align: center;
+	padding: 15px 0;
+	border-radius: 5px;
+	margin: 1px 0;
+}
+.mainNav li a  {
+	display: block;
+	text-decoration: none;
+	color: rgba(0,0,0,.8);
+}
+
+#menu  {
+	display: none;
+}
+.menu_icon  {
+	position: absolute;
+	right: 10px;
+	top: ;
+	display: inline-block;
+	border-top: solid thin black; 
+	border-bottom: solid thin black;
+	width: 25px;
+	height: 20px;
+}
+.menu_icon div  {
+		border-bottom: solid thin black;
+		height: 50%;
+}
+.menu_label  {
+	position: relative;
+	display: none;
+	color: rgba(0,0,0,.8);
+	font-weight: bold;
+	background-color: rgba(255,255,255,.85);
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+}
+
+
+#menu:checked + .menu_label {
+	background-color: #0981C0;
+}
+.menu_label:hover  {
+	cursor: pointer;
+}
+@media (max-width: 500px)  {
+	#menu:checked + nav  {
+		display: none;
+	}
+	.menu_label  {
+		display: block;
+	}
+	header  {
+		padding: 0;
+	}
+
+	.mainNav  {
+	
+	}
+
+	.mainNav li  {
+		display: block;
+		width: 100%;
+		border-radius: 0;
+		background-color: rgba(255,255,255,.85);
+		margin: 0;
+		border-top: solid thin #0981C0;
+	}
+
+}
