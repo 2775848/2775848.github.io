@@ -77,14 +77,14 @@ header  {
 	right: 10px;
 	top: ;
 	display: inline-block;
-	border-top: solid thin black; 
-	border-bottom: solid thin black;
+	border-top: solid 4px black; 
+	border-bottom: solid 4px black;
 	width: 25px;
 	height: 20px;
 }
 .menu_icon div  {
-		border-bottom: solid thin black;
-		height: 50%;
+		border-bottom: solid 4px black;
+		height: 8px;
 }
 .menu_label  {
 	position: relative;
