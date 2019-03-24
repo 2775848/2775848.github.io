@@ -8,7 +8,7 @@ $screen-larger: 1000px;
 	}
 }
 @mixin mq-medium-up  {
-	@media(min-width: $screen-small) and (max-width: $screen-medium) {
+	@media(min-width: $screen-small+1) and (max-width: $screen-medium) {
 		@content;
 	}
 }
@@ -24,6 +24,27 @@ $screen-larger: 1000px;
 .footer form  {
 	display: flex;
 	flex-flow: row wrap;
+}
+.header #menu  {
+	display: none;
+}
+.menu_button  {
+	display: none;
+	color: rgba(255,255,255,.9);
+	text-align: center;
+	margin: 0;
+	padding: 7px 0;
+	> div  {
+		width: 25px;
+		height: 22px;
+		margin: 0 10px 0 auto;
+		border-bottom: solid 2px rgba(255,255,255,1);
+		border-top: solid 2px rgba(255,255,255,1);		
+		> div  {
+			height: 10px;
+			border-bottom: solid 2px rgba(255,255,255,1);
+		}
+	}
 }
 .nav  {
 	justify-content: space-between;
@@ -72,9 +93,21 @@ $screen-larger: 1000px;
 }
 
 @include mq-small-up  {
+	#menu:checked + .nav  {
+		display: none;
+	}
+
+	.header .section  {
+		padding: 0;
+	}
+	.menu_button  {
+		display: block;
+	}
 	.nav a  {
 		width: 100%;
-		margin: 5px 1px;
+		margin: 0;
+		border-radius: 0;
+		border-bottom: solid thin rgba(0,0,0,.2);
 	}
 	h1, h2, .info h2 {
 		font-size: 2rem;
@@ -82,6 +115,7 @@ $screen-larger: 1000px;
 	}
 	.action  {
 		padding-top: 0;
+		padding-bottom: 10px;
 	}
 }
 

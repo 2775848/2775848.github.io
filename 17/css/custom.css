@@ -5,6 +5,25 @@
   display: flex;
   flex-flow: row wrap; }
 
+.header #menu {
+  display: none; }
+
+.menu_button {
+  display: none;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin: 0;
+  padding: 7px 0; }
+  .menu_button > div {
+    width: 25px;
+    height: 22px;
+    margin: 0 10px 0 auto;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white; }
+    .menu_button > div > div {
+      height: 10px;
+      border-bottom: solid 2px white; }
+
 .nav {
   justify-content: space-between; }
   .nav a {
@@ -40,17 +59,29 @@
   max-width: 60px; }
 
 @media (max-width: 400px) {
+  #menu:checked + .nav {
+    display: none; }
+
+  .header .section {
+    padding: 0; }
+
+  .menu_button {
+    display: block; }
+
   .nav a {
     width: 100%;
-    margin: 5px 1px; }
+    margin: 0;
+    border-radius: 0;
+    border-bottom: solid thin rgba(0, 0, 0, 0.2); }
 
   h1, h2, .info h2 {
     font-size: 2rem;
     margin: 0; }
 
   .action {
-    padding-top: 0; } }
-@media (min-width: 400px) and (max-width: 760px) {
+    padding-top: 0;
+    padding-bottom: 10px; } }
+@media (min-width: 401px) and (max-width: 760px) {
   .nav a {
     width: 48%;
     margin: 5px 1px; }
