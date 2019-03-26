@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@keyframes slide-down {
+  from {
+    top: 0; }
+  to {
+    top: 200px; } }
+@keyframes slide-up {
+  from {
+    top: 200px; }
+  to {
+    top: 0; } }
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #b5a789;
+  background-color: #F5F5F5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0px;
+ /* width:            900px;
+  margin-left:      auto;
+  margin-right:     auto;
+*/ }
+  @media (max-width: 500px) {
+    body {
+      background-color: #b5a789; } }
+
+#wrap {
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: #b5a789; }
+  @media (max-width: 500px) {
+    #wrap {
+      position: relative;
+      animation-name: slide-up;
+      animation-duration: 1s; } }
+
+#wrap_blog {
+  background-color: #b5a789;
+  padding: 10px 0; }
+
+/*----------*/
+header.top {
+  background-color: #675c47;
+  margin: 0px 10px;
+  display: flex;
+  flex-flow: row wrap; }
+  @media (max-width: 750px) {
+    header.top img#headerLogo {
+      width: 170px;
+      height: 80px; } }
+  @media (max-width: 500px) {
+    header.top img#headerLogo {
+      margin: 0 auto;
+      width: 115px;
+      height: 54px; } }
+  header.top img#headerSlogan {
+    margin-left: auto; }
+    @media (max-width: 750px) {
+      header.top img#headerSlogan {
+        width: 197px;
+        height: 80px; } }
+    @media (max-width: 500px) {
+      header.top img#headerSlogan {
+        display: none; } }
+
+#tableRow {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px; }
+
+section#drinks {
+  order: 1;
+  flex: 1 1 24%;
+  vertical-align: top;
+  background-color: #efe5d0;
+  margin: 5px;
+  padding: 15px;
+  overflow: hidden; }
+  @media (max-width: 500px) {
+    section#drinks {
+      width: 100%; } }
+
+section#main,
+section#blog {
+  order: 2;
+  vertical-align: top;
+  flex: 2 1 48%;
+  margin: 5px;
+  background: #efe5d0 url(../images/background.gif) top left;
+  font-size: 105%;
+  padding: 15px; }
+  @media (max-width: 960px) {
+    section#main,
+    section#blog {
+      order: 4;
+      flex: 1 1 100%; } }
+
+aside {
+  order: 3;
+  vertical-align: top;
+  flex: 1 1 24%;
+  background: #efe5d0 url(../images/background.gif) bottom right;
+  font-size: 100%;
+  padding: 15px;
+  margin: 5px;
+  overflow: hidden; }
+  @media (max-width: 960px) {
+    aside img {
+      width: 50%; } }
+  @media (max-width: 500px) {
+    aside {
+      flex: 1 1 100%; } }
+
+footer {
+  background-color: #675c47;
+  color: #efe5d0;
+  text-align: center;
+  padding: 15px;
+  margin: 0px 10px 0px 10px;
+  font-size: 90%; }
+
+h1 {
+  font-size: 120%;
+  color: #954b4b; }
+
+.slogan {
+  color: #954b4b; }
+
+.beanheading {
+  text-align: center;
+  line-height: 1.8em; }
+
+a:link {
+  color: #b76666;
+  text-decoration: none;
+  border-bottom: thin dotted #b76666; }
+
+a:visited {
+  color: #675c47;
+  text-decoration: none;
+  border-bottom: thin dotted #675c47; }
+
+/*--- ╨╜╨░╨▓╨╕╨│╨░╤Ж╨╕╤П ---*/
+nav {
+  background-color: #efe5d0;
+  margin: 10px 10px  0px 10px; }
+  @media (max-width: 500px) {
+    nav {
+      display: block;
+      position: absolute;
+      top: -160px;
+      left: 0;
+      right: 0; } }
+
+nav ul {
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+  margin: 0px; }
+
+nav ul li {
+  display: inline;
+  padding: 5px 10px 5px 10px; }
+  @media (max-width: 500px) {
+    nav ul li {
+      display: block;
+      text-align: center; } }
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold; }
+
+nav ul li.selected {
+  border-bottom: thick solid #954b4b; }
+
+#menu {
+  display: none; }
+
+.menu_icon {
+  border-top: solid 2px #efe5d0;
+  border-bottom: solid 2px #efe5d0;
+  width: 25px;
+  height: 20px; }
+
+.menu_icon div {
+  border-bottom: solid 2px #efe5d0;
+  height: 9px; }
+
+.menu_label {
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 15px;
+  display: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-align: center;
+  width: 25px;
+  height: 20px; }
+
+#menu:checked + .menu_label {
+  background-color: #0981C0; }
+
+.menu_label:hover {
+  cursor: pointer; }
+
+@media (max-width: 500px) {
+  #menu:checked + #wrap {
+    top: 200px;
+    animation-name: slide-down;
+    animation-duration: 1s; }
+    #menu:checked + #wrap nav {
+      display: block;
+      position: absolute;
+      top: -160px;
+      left: 0;
+      right: 0; }
+
+  .menu_label {
+    display: block; } }
+
+/*# sourceMappingURL=starbuzz.css.map */
