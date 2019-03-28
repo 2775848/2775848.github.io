@@ -1,13 +1,3 @@
-@keyframes slide-down {
-  from {
-    top: -200px; }
-  to {
-    top: 0; } }
-@keyframes slide-up {
-  from {
-    top: 0; }
-  to {
-    top: -200px; } }
 .nav,
 .boxes,
 .footer,
@@ -96,22 +86,19 @@
     top: 275px;
     right: 10px;
     z-index: 10;
-    transition-property: all;
+    transition-property: rotate(-360deg);
     transition-duration: .5s;
     transform: rotate(-360deg); }
 
   #menu:checked ~ .nav {
-    top: -240px;
-    opacity: 0;
-    /* 		animation-name: slide-up;
-        	animation-duration: .5s;
-    */ }
+    top: -320px;
+    opacity: 0; }
   #menu:checked ~ .menu_button {
     background-image: url(../imgs/menu1.png);
     background-size: contain;
     transform: rotate(360deg);
     top: 5px;
-    transition-property: all;
+    transition-property: rotate(360deg);
     transition-duration: .5s; }
 
   h1, h2, .info h2 {
