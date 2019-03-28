@@ -113,20 +113,27 @@ $screen-larger: 1000px;
 				border-bottom: solid thin rgba(0,0,0,.2);
 			}
 		}
+		.button.button-primary  {
+			background-color: rgba(255,255,255,1);
+			border-bottom: solid thin rgba(0,0,0,.2);
+			color: #33C3F0;
+		}
 	}
+
 	.header .section  {
 		padding: 0;
 	}
 	.menu_button  {
 		display: block;
-		width: 30px;
-		height: 30px;
+		width: 32px;
+		height: 32px;
+
 		background-image: url(../imgs/close-x.png);
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 90%;
+	
 		position: absolute;
-		top: 0;
+		top: 5px;
 		right: 10px;
 		z-index: 10;
 	}
