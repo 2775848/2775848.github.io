@@ -95,7 +95,8 @@ $screen-larger: 1000px;
 		top: 0;
 		right: 0;
 		left: 0;
-		padding-top: 40px;
+		padding-top: 5px;
+		padding-bottom: 50px;
 		background-color: rgba(255,255,255,1);
 		transition-property: all;
 		transition-duration: .5s;
@@ -118,13 +119,14 @@ $screen-larger: 1000px;
 		display: block;
 		width: 32px;
 		height: 32px;
-		
+
 		background-image: url(../imgs/close-x.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
-		top: 5px;
+		top: 165px;
 		right: 10px;
+		
 		z-index: 10;
 		transition-property: all;
 		transition-duration: .5s;
@@ -143,6 +145,7 @@ $screen-larger: 1000px;
 			background-image: url(../imgs/menu1.png);
 			background-size: contain;
 			transform: rotate(360deg);
+			top: 5px;
 		transition-property: all;
 		transition-duration: .5s;
 		}
