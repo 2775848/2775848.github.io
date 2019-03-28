@@ -57,31 +57,32 @@
 
 @media (max-width: 500px) {
   .header .section {
-    padding: 0; }
+    padding: 10px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.3); }
     .header .section .action {
-      padding-top: 40px;
-      padding-bottom: 10px; }
+      padding: 10px;
+      color: white; }
+    .header .section h1, .header .section h2 {
+      font-weight: normal;
+      margin: 5px; }
 
   .nav {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 70px;
     background-color: white;
     transition-property: all;
-    transition-duration: .5s; }
+    transition-duration: .5s;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4); }
     .nav a {
       width: 100%;
-      margin: 0;
-      border-radius: 0;
-      border-bottom: solid thin rgba(0, 0, 0, 0.2); }
-      .nav a:hover {
-        border-bottom: solid thin rgba(0, 0, 0, 0.2); }
+      margin: 10px 0;
+      border-radius: 0; }
     .nav .button.button-primary {
       background-color: white;
-      border-bottom: solid thin rgba(0, 0, 0, 0.2);
       color: #33C3F0; }
 
   .menu_button {
@@ -92,7 +93,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 165px;
+    top: 275px;
     right: 10px;
     z-index: 10;
     transition-property: all;

@@ -84,10 +84,15 @@ $screen-larger: 1000px;
 
 @include mq-small-up  {
 	.header .section  {
-		padding: 0;
+			padding: 10px 0 0 0;
+			background-color: rgba(0,0,0,.3);
 		.action  {
-			padding-top: 40px;
-			padding-bottom: 10px;
+			padding: 10px;
+			color: white;
+		}
+		h1, h2  {
+			font-weight: normal;
+			margin: 5px;
 		}
 	}
 	.nav  {
@@ -95,23 +100,20 @@ $screen-larger: 1000px;
 		top: 0;
 		right: 0;
 		left: 0;
-		padding-top: 5px;
-		padding-bottom: 50px;
+		padding-top: 15px;
+		padding-bottom: 70px;
 		background-color: rgba(255,255,255,1);
 		transition-property: all;
 		transition-duration: .5s;
+		box-shadow: 0 2px 20px rgba(0,0,0,.4);
 		a  {
 			width: 100%;
-			margin: 0;
+			margin: 10px 0;
 			border-radius: 0;
-			border-bottom: solid thin rgba(0,0,0,.2);
-			&:hover  {
-				border-bottom: solid thin rgba(0,0,0,.2);
-			}
 		}
 		.button.button-primary  {
 			background-color: rgba(255,255,255,1);
-			border-bottom: solid thin rgba(0,0,0,.2);
+
 			color: #33C3F0;
 		}
 	}
@@ -124,7 +126,7 @@ $screen-larger: 1000px;
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
-		top: 165px;
+		top: 275px;
 		right: 10px;
 		
 		z-index: 10;
