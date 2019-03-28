@@ -56,14 +56,11 @@
   max-width: 60px; }
 
 @media (max-width: 500px) {
-  #menu:checked ~ .nav {
-    top: -240px;
-    animation-name: slide-up;
-    animation-duration: .5s;
-    height: 0; }
-  #menu:checked ~ .menu_button {
-    background-image: url(../imgs/menu1.png);
-    background-size: contain; }
+  .header .section {
+    padding: 0; }
+    .header .section .action {
+      padding-top: 40px;
+      padding-bottom: 10px; }
 
   .nav {
     position: absolute;
@@ -72,8 +69,10 @@
     left: 0;
     padding-top: 40px;
     background-color: white;
-    animation-name: slide-down;
-    animation-duration: .5s; }
+    /* 		animation-name: slide-down;
+        	animation-duration: .5s;*/
+    transition-property: all;
+    transition-duration: 1s; }
     .nav a {
       width: 100%;
       margin: 0;
@@ -85,9 +84,6 @@
       background-color: white;
       border-bottom: solid thin rgba(0, 0, 0, 0.2);
       color: #33C3F0; }
-
-  .header .section {
-    padding: 0; }
 
   .menu_button {
     display: block;
@@ -101,13 +97,20 @@
     right: 10px;
     z-index: 10; }
 
+  #menu:checked ~ .nav {
+    top: -240px;
+    transition-property: all;
+    transition-duration: 1s;
+    /* 		animation-name: slide-up;
+        	animation-duration: .5s;
+    */ }
+  #menu:checked ~ .menu_button {
+    background-image: url(../imgs/menu1.png);
+    background-size: contain; }
+
   h1, h2, .info h2 {
     font-size: 2rem;
-    margin: 0; }
-
-  .action {
-    padding-top: 40px;
-    padding-bottom: 10px; } }
+    margin: 0; } }
 @media (min-width: 501px) and (max-width: 760px) {
   .nav a {
     width: 48%;
