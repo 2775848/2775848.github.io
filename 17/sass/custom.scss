@@ -97,10 +97,8 @@ $screen-larger: 1000px;
 		left: 0;
 		padding-top: 40px;
 		background-color: rgba(255,255,255,1);
-/* 		animation-name: slide-down;
-    	animation-duration: .5s;*/
 		transition-property: all;
-		transition-duration: 1s;
+		transition-duration: .5s;
 		a  {
 			width: 100%;
 			margin: 0;
@@ -120,22 +118,23 @@ $screen-larger: 1000px;
 		display: block;
 		width: 32px;
 		height: 32px;
-
+		
 		background-image: url(../imgs/close-x.png);
 		background-repeat: no-repeat;
 		background-position: center;
-	
 		position: absolute;
 		top: 5px;
 		right: 10px;
 		z-index: 10;
+		transition-property: all;
+		transition-duration: .5s;
+		transform: rotate(-360deg);
 	}
 
 	#menu:checked  {
 		~ .nav  {
 		top: -240px;
-		transition-property: all;
-		transition-duration: 1s;
+		opacity: 0;
 
 /* 		animation-name: slide-up;
     	animation-duration: .5s;
@@ -143,6 +142,9 @@ $screen-larger: 1000px;
 		~ .menu_button {
 			background-image: url(../imgs/menu1.png);
 			background-size: contain;
+			transform: rotate(360deg);
+		transition-property: all;
+		transition-duration: .5s;
 		}
 	}
 	h1, h2, .info h2 {
