@@ -1,8 +1,5 @@
 @media screen and (max-width:1210px) {
-  html{
-    font-size: 9px;
-  }
-  .wrap{
+  .wrap {
     width: 900px;
   }
   .main{
@@ -10,15 +7,115 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:910px) {
+  html{
+    font-size: 9px;
+  }
+  .wrap {
+    width: 600px;
+  }
+  form.filter {
+    position: fixed;
+    overflow: scroll;
+    height: 100%;
+    width: 300px;
+    right: -350px;
+    top: 0;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 10px 10px 30px #333333;
+    transition: all 0.3s ease-in;
+  }
+   
+  .filter-metro label:hover {
+    background-color: transparent;    
+  }
+
+  .filter-applay-btn:hover,
+  .filter-reset-btn:hover {
+    background-color: unset;
+  }
+  form.filter.active {
+    right: 0;
+  }
+
+  .mFilterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffcf26;
+    border-radius: 4px;
+    transition: all 0.3s ease-in;
+  }
+  .mFilterBtn.active {
+    right: 310px;
+  }
+  .burger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4px;
+    width: 26px;
+    background-color: #333333;
+    transition: all 0.3s ease-in;
+  }
+  .burger::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0;
+    height: 4px;
+    width: 26px;
+    background-color: #333333;
+    transition: all 0.3s ease-in;
+  }
+  .burger::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    height: 4px;
+    width: 26px;
+    background-color: #333333;
+    transition: all 0.3s ease-in;
+  }
+  .mFilterBtn.active .burger{
+    background-color: transparent;
+    transform: rotate(-360deg);
+  }
+  .mFilterBtn.active .burger::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .mFilterBtn.active .burger::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width:610px) {
   html{
     font-size: 8px;
   }
-
-}
-
-@media screen and (max-width:500px) {
   body {
-    min-width: 240px;
-
+    min-width: 320px;
+  }
+  .wrap, .main {
+    width: 300px;
+  }
+  form.filter {
+    width: 270px;
+  }
+  .mFilterBtn.active {
+    right: 275px;
+  }
 }

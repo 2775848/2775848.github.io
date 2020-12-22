@@ -193,76 +193,86 @@
       </div>
     </section>
 
-    <form class="filter">
+    
 
-      <div class="filter-metro">
-        <h3 class="filter__name">Близость к метро</h3>
-        <div class="filter__body">         
-          <div class="filter-metro__row">
-            <input type="checkbox" id="filter-metro-01" name="10">
-            <label for="filter-metro-01" class="filter-metro-btn">&lt; 10</label>
-            <input type="checkbox" id="filter-metro-02" name="10-20">
-            <label for="filter-metro-02" class="filter-metro-btn">10-20</label>
-            <input type="checkbox" id="filter-metro-03" name="20-30">
-            <label for="filter-metro-03" class="filter-metro-btn">20-30</label>
-            <input type="checkbox" id="filter-metro-04" name="30">
-            <label for="filter-metro-04" class="filter-metro-btn">30+</label>
-          </div>
-          <input type="checkbox" id="filter-metro-any" name="all" checked>
-          <label for="filter-metro-any" class="filter-metro-btn">Любая</label>
+
+
+
+      <form class="filter">
+        <div class="mFilterBtn">
+          <div class="burger"></div>
         </div>
-      </div>
-      <div class="filter-completion">
-        <h3 class="filter__name">Срок сдачи</h3>
-        <div class="filter__body">
-          <label class="filter-completion-btn">
-            <input type="radio" name="filter-completion" value="all" id="filter-completion" checked> <span>Любой</span>
-          </label>
-          <label class="filter-completion-btn">
-            <input type="radio" name="filter-completion" value="done" id="filter-completion"><span>Сдан</span>
-          </label>          
-          <label class="filter-completion-btn">
-            <input type="radio" name="filter-completion" value="this year" id="filter-completion"><span>В этом году</span>
-          </label>          
-          <label class="filter-completion-btn">
-            <input type="radio" name="filter-completion" value="next year" id="filter-completion"><span>В следующем году</span>
-          </label>
-        </div>
-      </div>
-      <div class="filter-options">
-        <h3 class="filter__name">Дополнительные опции</h3>
-        <div class="filter__body">
-          <input type="checkbox" id="filter-options-01" value="01">
-          <label for="filter-options-01" class="filter-options-checkbox">Двор без машин</label>
-          <input type="checkbox" id="filter-options-02" value="02">
-          <label for="filter-options-02" class="filter-options-checkbox">Высокие потолки</label>
-          <input type="checkbox" id="filter-options-03" value="03">
-          <label for="filter-options-03" class="filter-options-checkbox">Панорамные окна</label>
-          <input type="checkbox" id="filter-options-04" value="04">
-          <label for="filter-options-04" class="filter-options-checkbox">Есть кладовые</label>
-          <input type="checkbox" id="filter-options-05" value="05">
-          <label for="filter-options-05" class="filter-options-checkbox">Малоэтажный</label>
-          
-          <div class="filter-options-add hidden">
-            <input type="checkbox" id="filter-options-06" value="06">
-            <label for="filter-options-06" class="filter-options-checkbox">Доп.опция 1</label>
-            <input type="checkbox" id="filter-options-07" value="07">
-            <label for="filter-options-07" class="filter-options-checkbox">Доп.опция 2</label>
-            <input type="checkbox" id="filter-options-08" value="08">
-            <label for="filter-options-08" class="filter-options-checkbox">Доп.опция 3</label>
+
+
+        <div class="filter-metro">
+          <h3 class="filter__name">Близость к метро</h3>
+          <div class="filter__body">         
+            <div class="filter-metro__row">
+              <input type="checkbox" id="filter-metro-01" name="10">
+              <label for="filter-metro-01" class="filter-metro-btn">&lt; 10</label>
+              <input type="checkbox" id="filter-metro-02" name="10-20">
+              <label for="filter-metro-02" class="filter-metro-btn">10-20</label>
+              <input type="checkbox" id="filter-metro-03" name="20-30">
+              <label for="filter-metro-03" class="filter-metro-btn">20-30</label>
+              <input type="checkbox" id="filter-metro-04" name="30">
+              <label for="filter-metro-04" class="filter-metro-btn">30+</label>
+            </div>
+            <input type="checkbox" id="filter-metro-any" name="all" checked>
+            <label for="filter-metro-any" class="filter-metro-btn">Любая</label>
           </div>
-          <div class="filter-options-add-btn">Показать ещё</div>
-        </div>        
-      </div>
+        </div>
+        <div class="filter-completion">
+          <h3 class="filter__name">Срок сдачи</h3>
+          <div class="filter__body">
+            <label class="filter-completion-btn">
+              <input type="radio" name="filter-completion" value="all" id="filter-completion" checked> <span>Любой</span>
+            </label>
+            <label class="filter-completion-btn">
+              <input type="radio" name="filter-completion" value="done" id="filter-completion"><span>Сдан</span>
+            </label>          
+            <label class="filter-completion-btn">
+              <input type="radio" name="filter-completion" value="this year" id="filter-completion"><span>В этом году</span>
+            </label>          
+            <label class="filter-completion-btn">
+              <input type="radio" name="filter-completion" value="next year" id="filter-completion"><span>В следующем году</span>
+            </label>
+          </div>
+        </div>
+        <div class="filter-options">
+          <h3 class="filter__name">Дополнительные опции</h3>
+          <div class="filter__body">
+            <input type="checkbox" id="filter-options-01" value="01">
+            <label for="filter-options-01" class="filter-options-checkbox">Двор без машин</label>
+            <input type="checkbox" id="filter-options-02" value="02">
+            <label for="filter-options-02" class="filter-options-checkbox">Высокие потолки</label>
+            <input type="checkbox" id="filter-options-03" value="03">
+            <label for="filter-options-03" class="filter-options-checkbox">Панорамные окна</label>
+            <input type="checkbox" id="filter-options-04" value="04">
+            <label for="filter-options-04" class="filter-options-checkbox">Есть кладовые</label>
+            <input type="checkbox" id="filter-options-05" value="05">
+            <label for="filter-options-05" class="filter-options-checkbox">Малоэтажный</label>
+            
+            <div class="filter-options-add hidden">
+              <input type="checkbox" id="filter-options-06" value="06">
+              <label for="filter-options-06" class="filter-options-checkbox">Доп.опция 1</label>
+              <input type="checkbox" id="filter-options-07" value="07">
+              <label for="filter-options-07" class="filter-options-checkbox">Доп.опция 2</label>
+              <input type="checkbox" id="filter-options-08" value="08">
+              <label for="filter-options-08" class="filter-options-checkbox">Доп.опция 3</label>
+            </div>
+            <div class="filter-options-add-btn">Показать ещё</div>
+          </div>        
+        </div>
 
-        <input type="checkbox" id="filter-service" checked>
-        <label for="filter-service" class="filter-service">Услуги 0%</label>
+          <input type="checkbox" id="filter-service" checked>
+          <label for="filter-service" class="filter-service">Услуги 0%</label>
 
-      <button type="submit" class="filter-applay-btn">Применить фильтры</ button>
-      <button type="reset" class="filter-reset-btn">Сбросить фильтры</button>
+        <button type="submit" class="filter-applay-btn">Применить фильтры</button>
+        <button type="reset" class="filter-reset-btn">Сбросить фильтры</button>
 
 
-    </form>  
+      </form>
+
   </div>
 </body>
 <script src="js/index.js"></script>

@@ -102,10 +102,12 @@ body {
 }
 
 /* Боковой фильтр */
-
 form.filter {
   width: 300px;
   padding: 1px 14px 0 16px;
+}
+.mFilterBtn {
+  display: none;
 }
 h3.filter__name {
   position: relative;
@@ -127,16 +129,13 @@ h3.filter__name::after {
   background: url(../img/chevron-up.svg) no-repeat center;
   transition: all 0.1s ease-in;
 }
-h3.filter__name.rotate {
-  margin-bottom: 0;
-}
 h3.filter__name.rotate::after {
   transform: scaleY(-1);
 }
-
 h3.filter__name:hover {
   cursor: pointer;
 }
+
 .filter-metro {
   margin-bottom: 33px;
 }
@@ -152,9 +151,6 @@ h3.filter__name:hover {
   border-bottom: none;
   height: 49px;
 }
-.filter-metro input:checked + label {
-  background-color: #ffcf26;
-}
 .filter-metro label {
   display: flex;
   justify-content: center;
@@ -167,11 +163,6 @@ h3.filter__name:hover {
   padding-top: 1px;
   transition: background-color 0.1s ease-in;
 }
-.filter-metro label:hover,
-.filter-metro input:checked + label:hover {
-  cursor: pointer;
-  background-color: #ffe074;
-}
 #filter-metro-any + label {
   width: 100%;
   font-size: 1.6rem;
@@ -179,6 +170,15 @@ h3.filter__name:hover {
   border-radius: 0 0 5px 5px;
   border: #d6d6d6 1px solid;
 }
+.filter-metro label:hover {
+  cursor: pointer;
+  background-color: #ffe78f;
+}
+.filter-metro input:checked + label,
+#filter-metro-any:checked + label {
+  background-color: #ffcf26;
+}
+
 .filter-completion {
   margin-bottom: 33px;
 }
@@ -301,6 +301,7 @@ input#filter-service + label::before {
 input#filter-service + label::after {
   display: block;
   position: absolute;
+  top: 2px;
   left: 2px;
   content: "";
   height: 16px;
@@ -325,10 +326,12 @@ input#filter-service:checked + label::after {
   align-items: center;
   height: 50px;
   width: 100%;
+  font-family: inherit;
   font-size: 1.6rem;
   background-color: #ffcf26;
   border: none;
   border-radius: 4px;
+  outline:none;
   margin-bottom: 11px;
 }
 .filter-applay-btn:hover {
@@ -342,19 +345,21 @@ input#filter-service:checked + label::after {
   height: 50px;
   width: 100%;
   font-size: 1.6rem;
+  font-family: inherit;
   border: #d6d6d6 1px solid;
   border-radius: 4px;
-  background-color: #f4f4f4;
+  outline: none;
+  background-color: transparent;
 }
 .filter-reset-btn:hover {
   cursor: pointer;
-  background-color: #dddddddd;
+  background-color: #dddddd;
 }
 .filter-reset-btn::before {
   content: "";
   height: 100%;
   width: 20px;
-  background: url(../img/icon-\ x.svg) no-repeat center;
+  background: url(../img/x.svg) no-repeat center;
   margin-right: 8px;
 }
 
@@ -363,4 +368,6 @@ input#filter-service:checked + label::after {
 .hidden {
   display: none;
 }
-
+.lockScroll {
+  overflow: hidden;
+}

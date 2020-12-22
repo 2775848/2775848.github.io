@@ -55,8 +55,8 @@ mMenuBurger.addEventListener('click', () => {
 let addCardsBtn = document.querySelector('.add-cards-btn')
 let cardHidden = document.querySelectorAll('.card-link.hidden');
 
-addCardsBtn.addEventListener('click', () => { 
-   cardHidden.forEach( item => {
+addCardsBtn.addEventListener('click', function(){ 
+   cardHidden.forEach( function(item){
       item.classList.remove('hidden')
    })
 });
@@ -64,7 +64,7 @@ addCardsBtn.addEventListener('click', () => {
 let filterOptionsAddBtn = document.querySelector('.filter-options-add-btn');
 let hiddenOptions = document.querySelector('.filter-options-add.hidden');
 
-filterOptionsAddBtn.addEventListener('click', () => {
+filterOptionsAddBtn.addEventListener('click', function(){
    hiddenOptions.classList.toggle('hidden');
    if (filterOptionsAddBtn.innerHTML == "Показать ещё") {
       filterOptionsAddBtn.innerHTML = "Скрыть"
@@ -73,31 +73,44 @@ filterOptionsAddBtn.addEventListener('click', () => {
 
 /* скрыть/показать фильтр по клику на заголовок   */
 let filterName = document.querySelectorAll('.filter__name');
-filterName.forEach( item => {
-   item.addEventListener('click', () => {
-      item.nextElementSibling.classList.toggle('hidden')
+filterName.forEach( function(item){
+   item.addEventListener('click', function(){
+      item.nextElementSibling.classList.toggle('hidden');
       item.classList.toggle('rotate');
    })
 });
 
 /* обработка нажатий на фильтр Метро */
-let filterMetroAny = document.querySelector('#filter-metro-any')
-let filterMetroRow = document.querySelectorAll('.filter-metro__row > input')
+let filterMetroAny = document.querySelector('#filter-metro-any');
+let filterMetroRow = document.querySelectorAll('.filter-metro__row > input');
+
 
 //--  кнопка "Любая" при нажатии всегда активна и сбрасывает остальные --
-filterMetroAny.addEventListener('click', () => {
+filterMetroAny.addEventListener('click', function(){
    filterMetroAny.checked = true;
-   filterMetroRow.forEach ( item => item.checked = false );
+   filterMetroRow.forEach ( function(item){ item.checked = false } );
 });
 //--  остальные кнопки фильтра Метро --
-filterMetroRow.forEach( item => {
-   item.addEventListener('click', () => {
-      //-- проверяем есть ли хоть один элемент cheked вкл/выкл кнопку Любая
-      if ( Array.from(filterMetroRow).some( i => i.checked ) ) {
+filterMetroRow.forEach( function(item){
+   item.addEventListener('click', function(){
+      let arrayFilterMetroRow = Array.prototype.slice.call(filterMetroRow);
+      //-- если у фильтра есть хоть один элемент cheked, то выкл кнопку Любая
+      if ( arrayFilterMetroRow.some(function(i){return i.checked}) ){
          filterMetroAny.checked = false;
-      } else { 
-         filterMetroAny.checked = true; 
+      } else {
+      //--  если нет других элементов cheked, то вкл кнопку Любая
+         filterMetroAny.checked = true;
       }
    });
 });
- /* ----- */
+ /* ----- */   
+
+let mFilterBtn = document.querySelector('.mFilterBtn');
+let mFilter = document.querySelector('form.filter');
+
+mFilterBtn.addEventListener('click', function(){
+   mFilterBtn.classList.toggle('active');
+   mFilter.classList.toggle('active');
+   document.querySelector('body').classList.toggle('lockScroll');
+
+});
